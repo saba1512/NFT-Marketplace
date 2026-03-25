@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Marketplace</title>
-    <link rel="stylesheet" href="./assets/style.css">
-    <link rel="stylesheet" href="./assets/style.scss">
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.scss">
+    <script src="./assets/js/menu.js" defer></script>
+    <script src="./assets/js/data_array.js" defer></script>
 </head>
 <body>
     <header>
         <div class="header-container">
-            <img class="logo" src="./img/Logo.svg" alt="logo">
+            <img class="logo" src="./assets/img/Logo.svg" alt="logo">
 
             <div class="right-header">
                 <ul>
@@ -20,11 +21,165 @@
                     <li><a href="#">Connect a wallet</a></li>
                 </ul>
 
-                <a class="sign-up" href="#"><img src="./img/User.svg" alt="user-logo">Sign Up</a>
+                <a class="sign-up" href="#"><img src="./assets/img/User.svg" alt="user-logo">Sign Up</a>
 
-                <img class="burger" src="./img/Burger Menu.svg" alt="burger">
+                <img class="burger" src="./assets/img/Burger Menu.svg" alt="burger">
             </div>
         </div>
+
+        <nav class="burger-menu">
+            <ul>
+                <li><a href="#">Marketplace</a></li>
+                <li><a href="#">Rankings</a></li>
+                <li><a href="#">Connect a wallet</a></li>
+            </ul>
+
+            <a class="sign-up" href="#"><img src="./assets/img/User.svg" alt="user-logo">Sign Up</a>
+        </nav>
     </header>
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Discover <span style="color: #A259FF;">Digital Art</span> & Collect NFTs</h1>
+                <p>NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</p>
+                <button><img src="./assets/img/RocketLaunch.svg" alt="rocket-logo">Get Started</button>
+                <div class="statistic">
+                    <div class="sale statistic-item">
+                        <h3>240k+</h3>
+                        <p>Total Sale</p>
+                    </div>
+                    <div class="auction statistic-item">
+                        <h3>100k+</h3>
+                        <p>Auctions</p>
+                    </div>
+                    <div class="artist statistic-item">
+                        <h3>240k+</h3>
+                        <p>Artists</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-img">
+                <img class="main-img" src="./assets/img/Image Placeholder.svg" alt="hero-img">
+
+                <div class="person">
+                    <h4>Space Walking</h4>
+                    <div>
+                        <img class="avatar" src="./assets/img/Avatar.svg" alt="avatar-img">
+                        <p>Animakid</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-mobile">
+                <button><img src="./assets/img/RocketLaunch.svg" alt="rocket-logo">Get Started</button>
+                <div class="statistic">
+                    <div class="sale statistic-item">
+                        <h3>240k+</h3>
+                        <p>Total Sale</p>
+                    </div>
+                    <div class="auction statistic-item">
+                        <h3>100k+</h3>
+                        <p>Auctions</p>
+                    </div>
+                    <div class="artist statistic-item">
+                        <h3>240k+</h3>
+                        <p>Artists</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="collection">
+            <div class="collection-text">
+                <h2>Trending Collections</h2>
+                <p>Checkout our weekly updated trending collection.</p>
+            </div>
+
+            <div class="collection-cards">
+                <div class="cards mobile-card">
+                    <img class="card-main-img" src="./assets/img/collection/Primary Photo Placeholder.svg" alt="image-placeholder">
+
+                    <div class="small-img">
+                        <img src="./assets/img/collection/Secondary Photo Placeholder.svg" alt="image-placeholder">
+                        <img src="./assets/img/collection/Secondary Photo Placeholder (1).svg" alt="image-placeholder">
+
+                        <div class="number">
+                            <p>1025+</p>
+                        </div>
+                    </div>
+
+                    <div class="person">
+                        <h4>DSGN Animals</h4>
+
+                        <div>
+                            <img class="avatar" src="./assets/img/collection/Asset 12 2.svg" alt="avatar-img">
+                            <p>MrFox</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards tablet-card">
+                    <img class="card-main-img" src="./assets/img/collection/Primary Photo Placeholder (1).svg" alt="image-placeholder">
+
+                    <div class="small-img">
+                        <img src="./assets/img/collection/Secondary Photo Placeholder (2).svg" alt="image-placeholder">
+                        <img src="./assets/img/collection/Secondary Photo Placeholder (3).svg" alt="image-placeholder">
+
+                        <div class="number">
+                            <p>1025+</p>
+                        </div>
+                    </div>
+
+                    <div class="person">
+                        <h4>Magic Mashrooms</h4>
+
+                        <div>
+                            <img class="avatar" src="./assets/img/collection/Avatar.svg" alt="avatar-img">
+                            <p>Shroomie</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cards desktop-card">
+                    <img class="card-main-img" src="./assets/img/collection/Primary Photo Placeholder (2).svg" alt="image-placeholder">
+
+                    <div class="small-img">
+                        <img src="./assets/img/collection/Secondary Photo Placeholder (4).svg" alt="image-placeholder">
+                        <img src="./assets/img/collection/Secondary Photo Placeholder (5).svg" alt="image-placeholder">
+
+                        <div class="number">
+                            <p>1025+</p>
+                        </div>
+
+                    </div>
+                    <div class="person">
+                        <h4>Disco Machines</h4>
+
+                        <div>
+                            <img class="avatar" src="./assets/img/collection/Asset 12 2.svg" alt="avatar-img">
+                            <p>BeKind2Robots</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="data">
+            <div class="data-header">
+                <div class="data-text">
+                    <h2>Top Creators</h2>
+                    <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+                </div>
+                <button class="view-rankings">
+                    <img src="./assets/img/RocketLaunch.svg" alt="rocket">
+                    View Rankings
+                </button>
+            </div>
+            
+            <div class="creators-grid" id="creatorsGrid"></div>
+                <div id="cards">
+
+            </div>
+        </section>
+            
+    </main>
 </body>
 </html>
