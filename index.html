@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/style.scss">
     <script src="./assets/js/menu.js" defer></script>
     <script src="./assets/js/data_array.js" defer></script>
+    <script src="./assets/js/categorie.js" defer></script>
+    <script src="./assets/js/nft_cards.js" defer></script>
 </head>
 <body>
     <header>
@@ -174,12 +176,38 @@
                 </button>
             </div>
             
-            <div class="creators-grid" id="creatorsGrid"></div>
-                <div id="cards">
+            <div class="creators-grid" id="creatorsGrid">
+
+            </div>
+            <button class="view-rankings mobile">
+                <img src="./assets/img/RocketLaunch.svg" alt="rocket">
+                View Rankings
+            </button>
+        </section>
+        
+        <section class="categories">
+            <div class="categories-header">
+                <h1>Browse Categories</h1>
+
+                <div id="categories-cards">
+                </div>
 
             </div>
         </section>
-            
+
+        <section class="nft">
+            <div class="nft-header">
+                <div class="nft-text">
+                    <h1>Discover More NFTs</h1>
+                    <p>Explore new trending NFTs</p>
+                </div>
+                <button class="nft-btn"><img src="./assets/img/Eye.svg" alt="eye-button-img"> See All</button>
+            </div>
+
+            <div id="nft-cards">
+            </div>
+            <button class="nft-btn mobile"><img src="./assets/img/Eye.svg" alt="eye-button-img"> See All</button>
+        </section>
     </main>
 </body>
 </html>
