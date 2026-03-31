@@ -368,7 +368,7 @@ main .nft {
   display: flex;
   flex-direction: column;
   max-width: 90%;
-  margin: 4rem auto;
+  margin: 6rem auto;
 }
 main .nft .nft-header {
   display: flex;
@@ -469,6 +469,53 @@ main .nft .mobile img {
 main .nft .mobile:hover {
   background-color: #A259FF;
   transition: 0.3s ease-in-out;
+}
+main .get-started .get-started-header {
+  max-width: 90%;
+  margin: auto;
+}
+main .get-started .get-started-header .get-started-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main .get-started .get-started-header .get-started-text h1 {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 28px;
+}
+main .get-started .get-started-header .get-started-text p {
+  color: #FFFFFF;
+  font-weight: 0;
+  font-size: 28px;
+}
+main .get-started .get-started-header .get-started-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+main .get-started .get-started-header .get-started-cards .card {
+  background-color: #3B3B3B;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+main .get-started .get-started-header .get-started-cards .card .card-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main .get-started .get-started-header .get-started-cards .card .card-text h2 {
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 22px;
+}
+main .get-started .get-started-header .get-started-cards .card .card-text p {
+  color: rgb(215, 212, 212);
+  font-weight: 0;
+  font-size: 16px;
 }
 
 @media (min-width: 768px) {
@@ -709,6 +756,56 @@ main .nft .mobile:hover {
   main .nft .mobile {
     display: none;
   }
+  main .get-started .get-started-header {
+    max-width: 90%;
+    margin: auto;
+  }
+  main .get-started .get-started-header .get-started-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  main .get-started .get-started-header .get-started-text h1 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  main .get-started .get-started-header .get-started-text p {
+    color: #FFFFFF;
+    font-weight: 0;
+    font-size: 28px;
+  }
+  main .get-started .get-started-header .get-started-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    margin-top: 4rem;
+  }
+  main .get-started .get-started-header .get-started-cards .card {
+    background-color: #3B3B3B;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  main .get-started .get-started-header .get-started-cards .card .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .get-started .get-started-header .get-started-cards .card .card-text h2 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 22px;
+  }
+  main .get-started .get-started-header .get-started-cards .card .card-text p {
+    color: rgb(215, 212, 212);
+    font-weight: 0;
+    font-size: 16px;
+  }
 }
 @media (min-width: 1024px) {
   body header .header-container .right-header ul {
@@ -793,6 +890,9 @@ main .nft .mobile:hover {
   main .creators-grid .creator-card .creator-info h3 {
     font-size: 22px;
   }
+  main .nft {
+    margin-top: 8rem;
+  }
   main .nft #nft-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -802,13 +902,41 @@ main .nft .mobile:hover {
   main .nft #nft-cards #nft-3 {
     display: block;
   }
+  main .get-started .get-started-header {
+    margin-top: 9rem;
+  }
+  main .get-started .get-started-header .get-started-cards {
+    justify-content: space-between;
+  }
+  main .get-started .get-started-header .get-started-cards .card {
+    width: 400px;
+  }
+  main .get-started .get-started-header .get-started-cards .card img {
+    width: 300px;
+    height: 300px;
+  }
+  main .get-started .get-started-header .get-started-cards .card .card-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  main .get-started .get-started-header .get-started-cards .card .card-text h2 {
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 28px;
+  }
+  main .get-started .get-started-header .get-started-cards .card .card-text p {
+    color: rgb(215, 212, 212);
+    font-weight: 0;
+    font-size: 19px;
+  }
 }
 @media (min-width: 1300px) {
   body header .header-container {
     width: 1200px;
     max-width: 1200px;
   }
-  main .hero, main .collection, main .data, main .categories-header, main .nft {
+  main .hero, main .collection, main .data, main .categories-header, main .nft, main .get-started-header {
     max-width: 1200px !important;
   }
 }/*# sourceMappingURL=style.css.map */
