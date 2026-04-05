@@ -470,6 +470,74 @@ main .nft .mobile:hover {
   background-color: #A259FF;
   transition: 0.3s ease-in-out;
 }
+main .auctions {
+  background-image: url(../img/Glowing\ psychedelic\ mushroom\ close-up.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 5rem 0;
+  width: 100%;
+}
+main .auctions .auction-header {
+  max-width: 90%;
+  margin: auto;
+  padding: 9rem 0 4rem 0;
+}
+main .auctions .auction-header .auction-left-desktop .seller {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: #3B3B3B;
+  border-radius: 20px;
+  padding: 10px;
+  width: 150px;
+}
+main .auctions .auction-header .auction-left-desktop .seller img {
+  width: 30px;
+  height: 30px;
+}
+main .auctions .auction-header .auction-left-desktop .seller h4 {
+  font-weight: 200;
+  color: #FFFFFF;
+}
+main .auctions .auction-header .auction-left-desktop h1 {
+  font-size: 38px;
+  color: #FFFFFF;
+  margin-top: 2rem;
+}
+main .auctions .auction-header .auction-left-desktop .auction-desktop-btn {
+  display: none;
+}
+main .auctions .auction-header .auction-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+main .auctions .auction-header .auction-right .count-down {
+  background-color: #3B3B3B;
+  filter: opacity(0.5);
+  border-radius: 20px;
+  padding: 20px;
+}
+main .auctions .auction-header .auction-right .auction-mobile-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 18px 30px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-top: 40px;
+  width: 100%;
+  font-size: 16px;
+}
+main .auctions .auction-header .auction-right .auction-mobile-btn img {
+  width: 20px;
+}
 main .get-started .get-started-header {
   max-width: 90%;
   margin: auto;
@@ -516,6 +584,67 @@ main .get-started .get-started-header .get-started-cards .card .card-text p {
   color: rgb(215, 212, 212);
   font-weight: 0;
   font-size: 16px;
+  padding: 0 10px 0 0;
+}
+main .inbox {
+  max-width: 90%;
+  margin: 80px auto;
+}
+main .inbox .inbox-header {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+main .inbox .inbox-header img {
+  width: 100%;
+}
+main .inbox .inbox-header .inbox-text {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+main .inbox .inbox-header .inbox-text h1 {
+  color: #FFFFFF;
+  font-size: 28px;
+  font-weight: 600;
+}
+main .inbox .inbox-header .inbox-text p {
+  color: #FFFFFF;
+  font-size: 18px;
+  margin-top: 10px;
+  font-weight: 100;
+}
+main .inbox .inbox-header .inbox-text .input-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  margin-top: 20px;
+}
+main .inbox .inbox-header .inbox-text .input-btn input {
+  width: 100%;
+  padding: 18px 30px;
+  border-radius: 25px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+main .inbox .inbox-header .inbox-text .input-btn button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background-color: #A259FF;
+  color: #FFFFFF;
+  padding: 18px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 100%;
+}
+main .inbox .inbox-header .inbox-text .input-btn button img {
+  width: 20px;
 }
 
 @media (min-width: 768px) {
@@ -756,6 +885,36 @@ main .get-started .get-started-header .get-started-cards .card .card-text p {
   main .nft .mobile {
     display: none;
   }
+  main .auctions .auction-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between !important;
+    padding: 15rem 0 4rem 0;
+  }
+  main .auctions .auction-header .auction-left-desktop .auction-desktop-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 18px 30px;
+    border-radius: 20px;
+    font-weight: 600;
+    margin-top: 40px;
+    width: 200px;
+    font-size: 16px;
+  }
+  main .auctions .auction-header .auction-left-desktop .auction-desktop-btn img {
+    width: 20px;
+  }
+  main .auctions .auction-header .auction-right {
+    width: 300px;
+    margin: 0;
+  }
+  main .auctions .auction-header .auction-right .auction-mobile-btn {
+    display: none;
+  }
   main .get-started .get-started-header {
     max-width: 90%;
     margin: auto;
@@ -804,6 +963,45 @@ main .get-started .get-started-header .get-started-cards .card .card-text p {
   main .get-started .get-started-header .get-started-cards .card .card-text p {
     color: rgb(215, 212, 212);
     font-weight: 0;
+    font-size: 16px;
+  }
+  main .inbox {
+    background-color: #3B3B3B;
+    border-radius: 20px;
+  }
+  main .inbox .inbox-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    padding: 40px;
+  }
+  main .inbox .inbox-header .astronant {
+    width: 50%;
+    height: 100%;
+  }
+  main .inbox .inbox-header .inbox-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  main .inbox .inbox-header .inbox-text .input-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+  }
+  main .inbox .inbox-header .inbox-text .input-btn button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background-color: #A259FF;
+    color: #FFFFFF;
+    padding: 18px 30px;
+    border-radius: 25px;
+    font-weight: 600;
     font-size: 16px;
   }
 }
@@ -902,6 +1100,15 @@ main .get-started .get-started-header .get-started-cards .card .card-text p {
   main .nft #nft-cards #nft-3 {
     display: block;
   }
+  main .auctions {
+    width: 100% !important;
+  }
+  main .auctions .auction-header {
+    padding: 20rem 0 4rem 0;
+  }
+  main .auctions .auction-header .auction-right .auction-mobile-btn {
+    display: none;
+  }
   main .get-started .get-started-header {
     margin-top: 9rem;
   }
@@ -909,7 +1116,7 @@ main .get-started .get-started-header .get-started-cards .card .card-text p {
     justify-content: space-between;
   }
   main .get-started .get-started-header .get-started-cards .card {
-    width: 400px;
+    width: 280px;
   }
   main .get-started .get-started-header .get-started-cards .card img {
     width: 300px;
@@ -930,13 +1137,42 @@ main .get-started .get-started-header .get-started-cards .card .card-text p {
     font-weight: 0;
     font-size: 19px;
   }
+  main .inbox {
+    max-width: 90%;
+    margin: 130px auto;
+  }
+  main .inbox .inbox-header {
+    gap: 80px;
+    padding: 60px;
+  }
+  main .inbox .inbox-header .astronant {
+    width: 400px;
+    height: auto;
+  }
+  main .inbox .inbox-header .inbox-text {
+    gap: 20px;
+  }
+  main .inbox .inbox-header .inbox-text h1 {
+    font-size: 38px;
+  }
+  main .inbox .inbox-header .inbox-text p {
+    font-size: 20px;
+  }
+  main .inbox .inbox-header .inbox-text .input-btn {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+  }
 }
 @media (min-width: 1300px) {
   body header .header-container {
     width: 1200px;
     max-width: 1200px;
   }
-  main .hero, main .collection, main .data, main .categories-header, main .nft, main .get-started-header {
+  main .hero, main .collection, main .data, main .categories-header, main .nft, main .get-started-header, main .auction-header, main .inbox {
     max-width: 1200px !important;
+  }
+  main .get-started .get-started-header .get-started-cards .card {
+    width: 350px;
   }
 }/*# sourceMappingURL=style.css.map */

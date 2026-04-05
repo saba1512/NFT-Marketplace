@@ -554,15 +554,97 @@ main{
             text-transform: capitalize;
             cursor: pointer;
             margin-top: 2rem;
-
+            
             img {
                 width: 20px;
                 height: 20px;
             }
-
+            
             &:hover {
                 background-color: #A259FF;
                 transition: 0.3s ease-in-out;
+            }
+        }
+    }
+    
+    .auctions{
+        background-image: url(../img/Glowing\ psychedelic\ mushroom\ close-up.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 5rem 0;
+        width: 100%;
+
+        .auction-header{
+            max-width: 90%;
+            margin: auto;
+            padding: 9rem 0 4rem 0;
+
+            .auction-left-desktop{
+
+                .seller{
+                    display: flex;
+                    align-items: center;
+                    gap: 1rem;
+                    background-color: #3B3B3B;
+                    border-radius: 20px;
+                    padding: 10px;
+                    width: 150px;
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    h4{
+                        font-weight: 200;
+                        color: #FFFFFF;
+                    }
+                }
+
+                h1{
+                    font-size: 38px;
+                    color: #FFFFFF;
+                    margin-top: 2rem;
+                }
+
+                .auction-desktop-btn{
+                    display: none;
+                }
+            }
+
+            .auction-right{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                margin-top: 2rem;
+
+                .count-down{
+                    background-color: #3B3B3B;
+                    filter: opacity(0.5);
+                    border-radius: 20px;
+                    padding: 20px;
+                }
+
+                .auction-mobile-btn{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 12px;
+                    background-color: #ffffff;
+                    color: #000000;
+                    padding: 18px 30px;
+                    border-radius: 20px;
+                    font-weight: 600;
+                    margin-top: 40px;
+                    width: 100%;
+                    font-size: 16px;
+
+                    img{
+                        width: 20px;
+                    }
+                }
             }
         }
     }
@@ -622,6 +704,77 @@ main{
                             color: rgb(215, 212, 212);
                             font-weight: 0;
                             font-size: 16px;
+                            padding: 0 10px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .inbox{
+        max-width: 90%;
+        margin: 80px auto;
+
+        .inbox-header{
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+
+            img{
+                width: 100%;
+            }
+
+            .inbox-text{
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+
+                h1{
+                    color: #FFFFFF;
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+
+                p{
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    margin-top: 10px;
+                    font-weight: 100;
+                }
+
+                .input-btn{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                    align-items: center;
+                    margin-top: 20px;
+
+                    input{
+                        width: 100%;
+                        padding: 18px 30px;
+                        border-radius: 25px;
+                        background-color: #ffffff;
+                        border: none;
+                        outline: none;
+                        font-size: 18px;
+                    }
+
+                    button{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 12px;
+                        background-color: #A259FF;
+                        color: #FFFFFF;
+                        padding: 18px 30px;
+                        border-radius: 25px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        width: 100%;
+
+                        img{
+                            width: 20px;
                         }
                     }
                 }
@@ -927,6 +1080,47 @@ main{
             }
         }
 
+        .auctions{
+
+            .auction-header{
+                display: flex;
+                align-items: center;
+                justify-content: space-between !important;
+                padding: 15rem 0 4rem 0;
+
+                .auction-left-desktop{
+
+                    .auction-desktop-btn{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 12px;
+                        background-color: #ffffff;
+                        color: #000000;
+                        padding: 18px 30px;
+                        border-radius: 20px;
+                        font-weight: 600;
+                        margin-top: 40px;
+                        width: 200px;
+                        font-size: 16px;
+
+                        img{
+                            width: 20px;
+                        }
+                    }
+                }
+
+                .auction-right{
+                    width: 300px;
+                    margin: 0;
+
+                    .auction-mobile-btn{
+                        display: none;
+                    }
+                }
+            }
+        }
+
         .get-started{
             .get-started-header{
                 max-width: 90%;
@@ -985,6 +1179,63 @@ main{
                                 color: rgb(215, 212, 212);
                                 font-weight: 0;
                                 font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .inbox{
+            background-color: #3B3B3B;
+            border-radius: 20px;
+
+            .inbox-header{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 40px;
+                padding: 40px;
+
+                .astronant{
+                    width: 50%;
+                    height: 100%;
+                }
+
+                .inbox-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    h1{
+                    }
+
+                    p{
+                    }
+
+                    .input-btn{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        align-items: center;
+                        margin-top: 20px;
+
+                        input{
+                        }
+
+                        button{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            gap: 12px;
+                            background-color: #A259FF;
+                            color: #FFFFFF;
+                            padding: 18px 30px;
+                            border-radius: 25px;
+                            font-weight: 600;
+                            font-size: 16px;
+
+                            img{
                             }
                         }
                     }
@@ -1183,6 +1434,21 @@ main{
             }
         }
 
+        .auctions{
+            width: 100% !important;
+            .auction-header{
+                padding: 20rem 0 4rem 0;
+
+
+                .auction-right{
+
+                    .auction-mobile-btn{
+                        display: none;
+                    }
+                }
+            }
+        }
+
         .get-started{
             .get-started-header{
                 margin-top: 9rem;
@@ -1200,7 +1466,7 @@ main{
                     justify-content: space-between;
 
                     .card{
-                        width: 400px;
+                        width: 280px;
 
                         img{
                             width: 300px;
@@ -1228,6 +1494,49 @@ main{
                 }
             }
         }
+
+        .inbox{
+            max-width: 90%;
+            margin: 130px auto;
+
+            .inbox-header{
+                gap: 80px;
+                padding: 60px;
+
+                .astronant{
+                    width: 400px;
+                    height: auto;
+                }
+
+                .inbox-text{
+                    gap: 20px;
+
+                    h1{
+                        font-size: 38px;
+                    }
+
+                    p{
+                        font-size: 20px;
+                    }
+
+                    .input-btn{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 0;
+
+                        input{
+                        }
+
+                        button{
+
+                            img{
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -1241,8 +1550,21 @@ main{
         }
     }
     main{
-        .hero, .collection, .data, .categories-header, .nft, .get-started-header{
+        .hero, .collection, .data, .categories-header, .nft, .get-started-header, .auction-header, .inbox{
             max-width: 1200px !important;
+        }
+
+        .get-started{
+            .get-started-header{
+
+
+                .get-started-cards{
+
+                    .card{
+                        width: 350px;
+                    }
+                }
+            }
         }
     }
 }
