@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -516,10 +517,31 @@ main .auctions .auction-header .auction-right {
   margin-top: 2rem;
 }
 main .auctions .auction-header .auction-right .count-down {
-  background-color: #3B3B3B;
-  filter: opacity(0.5);
+  background: rgba(23, 23, 23, 0.2); /* გამჭვირვალე თეთრი */
+  backdrop-filter: blur(10px); /* ბლარის ინტენსივობა */
+  -webkit-backdrop-filter: blur(10px); /* Safari-სთვის */
   border-radius: 20px;
-  padding: 20px;
+  padding: 40px;
+  width: 100%;
+}
+main .auctions .auction-header .auction-right .count-down p {
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 100;
+}
+main .auctions .auction-header .auction-right .count-down .count-down-item {
+  display: flex;
+  justify-content: space-between;
+  color: #FFFFFF;
+  margin-top: 1rem;
+}
+main .auctions .auction-header .auction-right .count-down .count-down-item h4 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+main .auctions .auction-header .auction-right .count-down .count-down-item span {
+  font-size: 35px;
 }
 main .auctions .auction-header .auction-right .auction-mobile-btn {
   display: flex;
@@ -987,7 +1009,15 @@ main .inbox .inbox-header .inbox-text .input-btn button img {
   }
   main .auctions .auction-header .auction-right {
     width: 300px;
-    margin: 0;
+  }
+  main .auctions .auction-header .auction-right .count-down .count-down-item .h4 {
+    font-size: 38px;
+  }
+  main .auctions .auction-header .auction-right .count-down .count-down-item .margin-left {
+    margin-left: 15px;
+  }
+  main .auctions .auction-header .auction-right .count-down .count-down-item span {
+    font-size: 35px;
   }
   main .auctions .auction-header .auction-right .auction-mobile-btn {
     display: none;
@@ -1210,6 +1240,22 @@ main .inbox .inbox-header .inbox-text .input-btn button img {
   }
   main .auctions .auction-header {
     padding: 20rem 0 4rem 0;
+  }
+  main .auctions .auction-header .auction-right {
+    margin: 0;
+  }
+  main .auctions .auction-header .auction-right .count-down {
+    width: 350px;
+  }
+  main .auctions .auction-header .auction-right .count-down .count-down-item .h4 {
+    font-size: 80px;
+    margin-bottom: 0;
+  }
+  main .auctions .auction-header .auction-right .count-down .count-down-item .margin-left {
+    margin-left: 10px;
+  }
+  main .auctions .auction-header .auction-right .count-down .count-down-item span {
+    font-size: 40px;
   }
   main .auctions .auction-header .auction-right .auction-mobile-btn {
     display: none;

@@ -621,10 +621,35 @@ main{
                 margin-top: 2rem;
 
                 .count-down{
-                    background-color: #3B3B3B;
-                    filter: opacity(0.5);
+                    background: rgba(23, 23, 23, 0.2); /* გამჭვირვალე თეთრი */
+                    backdrop-filter: blur(10px); /* ბლარის ინტენსივობა */
+                    -webkit-backdrop-filter: blur(10px); /* Safari-სთვის */
                     border-radius: 20px;
-                    padding: 20px;
+                    padding: 40px;
+                    width: 100%;
+
+                    p{
+                        color: #FFFFFF;
+                        font-size: 18px;
+                        font-weight: 100;
+                    }
+
+                    .count-down-item{
+                        display: flex;
+                        justify-content: space-between;
+                        color: #FFFFFF;
+                        margin-top: 1rem;
+
+                        h4{
+                            font-size: 35px;
+                            margin-bottom: 10px;
+                            font-weight: bold;
+                        }
+
+                        span{
+                            font-size: 35px;
+                        }
+                    }
                 }
 
                 .auction-mobile-btn{
@@ -1208,7 +1233,24 @@ main{
 
                 .auction-right{
                     width: 300px;
-                    margin: 0;
+
+                    .count-down{
+
+                        .count-down-item{
+
+                        .h4{
+                            font-size: 38px;
+                        }
+
+                        .margin-left{
+                            margin-left: 15px;
+                        }
+
+                        span{
+                            font-size: 35px;
+                        }
+                    }
+                }
 
                     .auction-mobile-btn{
                         display: none;
@@ -1572,6 +1614,27 @@ main{
 
 
                 .auction-right{
+                    margin: 0;
+
+                    .count-down{
+                        width: 350px;
+
+                        .count-down-item{
+
+                            .h4{
+                                font-size: 80px;
+                                margin-bottom: 0;
+                            }
+
+                            .margin-left{
+                                margin-left: 10px;
+                            }
+
+                            span{
+                                font-size: 40px;
+                            }
+                        }
+                    }
 
                     .auction-mobile-btn{
                         display: none;
